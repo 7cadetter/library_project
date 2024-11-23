@@ -1,0 +1,449 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(96, 72, 255), rgb(15, 0, 224));
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.box {
+    background: linear-gradient(to bottom, rgb(141, 179, 255), rgb(77, 135, 251));
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    width: 400px;
+    border: 2px rgb(141, 179, 255) outset;
+    border-radius: 50px;
+}
+
+#loginbox {
+    height: 460px;
+}
+
+#signupbox {
+    height: 850px;
+}
+
+.title {
+    font-family: "Quicksand";
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+#logintitle {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#signuptitle {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.inputbox1 {
+    height: 50px;
+    width: 300px;
+    border-radius: 100px;
+    border: 1px grey groove;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.inputbox2 {
+    position: relative;
+    margin-top: 20px;
+    left: -65px;
+    height: 30px;
+    width: 300px;
+    border-radius: 100px;
+    border: 1px grey groove;
+    padding-left: 15px;
+    padding-right: 15px;
+}  
+
+#username {
+    position: relative;
+    margin-left: 35px;
+    margin-top: 0px;
+}
+
+#password {
+    position: relative;
+    margin-left: 35px;
+    margin-top: 50px;
+}
+
+input[type = 'text'] {
+    font-family: "Quicksand";
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+input[type = 'password'] {
+    font-family: "Quicksand";
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.switchlink {
+    font-family: "Quicksand";
+    position: absolute;
+    bottom: 40px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+#signuplink {
+    left: 120px;
+    bottom: 20px;
+}
+
+#loginlink {
+    left: 110px;
+}
+
+.switchlink:hover {
+    text-decoration: underline;
+}
+
+input[type = "submit"] {
+    font-family: "Quicksand";
+    font-size: 15px;
+    position: relative;
+    margin-top: 35px;
+    margin-left: 122px;
+    border-radius: 50px;
+    width: 140px;
+    height: 40px;
+    background-color:rgb(206, 226, 255);
+
+}
+
+.error {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-family: "Quicksand";
+    font-weight: 500;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#headbar {
+    position: sticky;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(116, 190, 255), rgb(63, 165, 255));
+    border-bottom: 2px rgb(116, 190, 255) outset;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+#headtitle {
+    position: relative;
+    top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.current-user {
+    position: absolute;
+    right: 2%;
+    bottom: 20%;
+    color: white;
+    font-size: 20px;
+    font-family: "Quicksand";
+}
+
+.homebox {
+    position: relative;
+    width: 800px;
+    height: 193px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    border: 2px rgb(141, 179, 255) outset;
+    background: linear-gradient(to bottom, rgb(141, 179, 255), rgb(77, 135, 251));
+    transition: transform 0.2s;
+}
+
+.homebox:hover {
+    transform: scale(1.05);
+}
+
+#search {
+    margin-top: 30px;
+}
+
+#reservations {
+    display: block;
+    position: relative;
+    margin: 20px auto 0; 
+    width: 385px;
+    height: 117px;
+    border-radius: 75px;
+    border: 2px rgb(141, 179, 255) outset;
+    background: linear-gradient(to bottom, rgb(141, 179, 255), rgb(92, 146, 255));
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    color: white;
+    transition: transform 0.2s;
+}
+
+#reservations:hover {
+    transform: scale(1.05);
+}
+
+.boxtitle {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    font-size: 70px;
+    font-weight: 500;
+    font-family: "Quicksand";
+    color: rgb(255, 255, 255)
+}
+
+.by {
+    position: absolute;
+    right: 0;
+    height: 50%;
+    width: 50%;
+    background-color: rgb(202, 220, 255);
+    z-index: 1;
+    text-align: center;
+}
+
+#bytitle {
+    border-bottom: grey 2px groove;
+    border-left: grey 2px groove;
+    border-top-right-radius: 50px;
+}
+
+#bycategory {
+    border-top: grey 2px groove;
+    border-left: grey 2px groove;
+    bottom: 0;
+    border-bottom-right-radius: 50px;
+}
+
+.bytext {
+    position: relative;
+    top: 10%;
+    font-family: "Quicksand";
+    font-size: 19px;
+    font-weight: 500;
+}
+
+#searchbar {
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    width: 60%;
+}
+
+#searchsubmit {
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    width: 25%;
+    transition: transform 0.2s;
+}
+
+#searchsubmit:hover {
+    transform: scale(1.05);
+}
+
+#category {
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    width: 60%;
+    height: 30px;
+}
+
+.result {
+    position: relative;
+    width: 50vw;
+    height: 33vh;
+    margin: 25px auto;
+    border-radius: 50px;
+    border: 2px rgb(141, 179, 255) outset;
+    background: linear-gradient(to bottom, rgb(141, 179, 255), rgb(77, 135, 251));
+    transition: transform 0.2s;
+    line-height: 33vh;
+    text-align: center;
+    line-height: 1;
+}
+
+.result:hover {
+    transform: scale(1.05);
+}
+
+#book-title { 
+    position: relative;
+    font-size: 8vh;
+    font-family: "Quicksand";
+    font-weight: 500;
+    color: white;
+    top: 10%;
+    line-height: 1;
+}
+
+#book-author {
+    position: relative;
+    top: 15%;
+    font-size: 18px;
+    font-family: "Quicksand";
+    color: white;
+    line-height: 1;
+}
+
+#reserve {
+    position: relative;
+    top: 30%;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    border-radius: 50px;
+    background-color: rgb(206, 226, 255);
+    border: 2px black groove;
+    transition: transform 0.2s;
+    font-family: "Quicksand";
+}
+
+#reserve:hover {
+    transform: scale(1.05);
+}
+
+.status {
+    position: relative;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    text-align: center;
+    margin-top: 12%;
+    color: white;
+}
+
+#home {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    margin: 15px;
+    width: 90px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: rgb(206, 226, 255);
+    color: rgb(0, 0, 0);
+    font-family: "Quicksand";
+    transition: transform 0.2s;
+    z-index: 1;
+}
+
+#home:hover {
+    transform: scale(1.05);
+}
+
+.none-found {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Quicksand';
+}
+
+#unreserve {
+    position: relative;
+    top: 30%;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    border-radius: 50px;
+    background-color: rgb(255, 47, 47);
+    border: 2px black solid;
+    transition: transform 0.2s;
+    font-family: "Quicksand";
+    color: white;
+}
+
+#unreserve:hover {
+    transform: scale(1.05);
+}
+
+.pages {
+    position: relative;
+    bottom: 0px;
+    margin: 35px auto 0px;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgb(121, 175, 255);
+    border: 5px solid rgb(53, 58, 141);
+    text-align: center;
+}
+
+.active {
+    top: 8px;
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    font-family: "Quicksand";
+}
+
+.inactive {
+    top: 8px;
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-family: "Quicksand";
+}
+
+.inactive:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    position: relative;
+    margin-top: 49px;
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(to bottom, rgb(116, 190, 255), rgb(63, 165, 255));
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 18px;
+}
+
+#foot-text {
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
